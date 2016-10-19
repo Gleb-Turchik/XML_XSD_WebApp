@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.w3schools.com"
+           xmlns="http://www.w3schools.com"
+           elementFormDefault="qualified">
+
+    <xs:element name="tourist-vouchers">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="voucher" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="voucher" type="Voucher" abstract="true"/>
+    <xs:element name="wellness-voucher" type="Wellness" substitutionGroup="voucher"/>
+    <xs:element name="entertaiment-voucher" type="Entertaiment" substitutionGroup="voucher"/>
+
+    <xs:complexType name="Voucher">
+        <xs:sequence>
+            <xs:element name="type">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="weekend"/>
+                        <xs:enumeration value="tour"/>
+                        <xs:enumeration value="relax"/>
+                        <xs:enumeration value="pilgrimage"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="country">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="[A-Z][a-zA-z\s]{1,20}"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="number-days-nights" type="xs:positiveInteger"/>
+            <xs:element name="transport">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="air"/>
+                        <xs:enumeration value="rail"/>
+                        <xs:enumeration value="car"/>
+                        <xs:enumeration value="liner"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="hotel-characs" type="Hotel-Characs" minOccurs="1" maxOccurs="unbounded"/>
+            <xs:element name="cost" type="xs:positiveInteger"/>
+        </xs:sequence>
+        <xs:attribute name="name" type="xs:string" use="optional" default="no-Name"/>
+        <xs:attribute name="id" type="xs:positiveInteger" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="Hotel-Characs">
+        <xs:sequence>
+            <xs:element name="stars">
+                <xs:simpleType>
+                    <xs:restriction base="xs:positiveInteger">
+                        <xs:minInclusive value="1"/>
+                        <xs:maxInclusive value="5"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="meal" type="xs:boolean"/>
+            <xs:element name="kind-of-meal">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="false"/>
+                        <xs:enumeration value="OB"/>
+                        <xs:enumeration value="BB"/>
+                        <xs:enumeration value="HB"/>
+                        <xs:enumeration value="HB+"/>
+                        <xs:enumeration value="FB"/>
+                        <xs:enumeration value="FB+"/>
+                        <xs:enumeration value="AL"/>
+                        <xs:enumeration value="UAL"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="rooms">
+                <xs:simpleType>
+                    <xs:restriction base="xs:positiveInteger">
+                        <xs:minInclusive value="1"/>
+                        <xs:maxInclusive value="5"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="condition" type="xs:boolean"/>
+            <xs:element name="tv" type="xs:boolean"/>
+            <xs:element name="wifi" type="xs:boolean"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="Wellness">
+        <xs:complexContent>
+            <xs:extension base="Voucher">
+                <xs:sequence>
+                    <xs:element name="drugs">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:enumeration value="pills"/>
+                                <xs:enumeration value="injections"/>
+                                <xs:enumeration value="Supplements"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="procedures">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:enumeration value="massage"/>
+                                <xs:enumeration value="gymnastics"/>
+                                <xs:enumeration value="physiotherapy"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="Entertaiment">
+        <xs:complexContent>
+            <xs:extension base="Voucher">
+                <xs:sequence>
+                    <xs:element name="bar">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:enumeration value="alcohol"/>
+                                <xs:enumeration value="bowling"/>
+                                <xs:enumeration value="billiards"/>
+                                <xs:enumeration value="slots"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+</xs:schema>

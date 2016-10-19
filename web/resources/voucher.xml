@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tourist-vouchers
+        xmlns="http://www.w3schools.com"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.w3schools.com voucher.xsd">
+
+    <wellness-voucher id="1" name="Tenerife for rich">
+        <type>weekend</type>
+        <country>Spain</country>
+        <number-days-nights>14</number-days-nights>
+        <transport>air</transport>
+        <hotel-characs>
+            <stars>5</stars>
+            <meal>true</meal>
+            <kind-of-meal>UAL</kind-of-meal>
+            <rooms>3</rooms>
+            <condition>true</condition>
+            <tv>true</tv>
+            <wifi>true</wifi>
+        </hotel-characs>
+        <cost>3000</cost>
+        <drugs>pills</drugs>
+        <procedures>physiotherapy</procedures>
+    </wellness-voucher>
+
+    <wellness-voucher id="2" name="Madagascar">
+        <type>relax</type>
+        <country>Ecuador</country>
+        <number-days-nights>11</number-days-nights>
+        <transport>liner</transport>
+        <hotel-characs>
+            <stars>4</stars>
+            <meal>true</meal>
+            <kind-of-meal>HB+</kind-of-meal>
+            <rooms>2</rooms>
+            <condition>true</condition>
+            <tv>false</tv>
+            <wifi>true</wifi>
+        </hotel-characs>
+        <cost>5000</cost>
+        <drugs>Supplements</drugs>
+        <procedures>massage</procedures>
+    </wellness-voucher>
+
+    <wellness-voucher id="3" name="Abu-Dhabi">
+        <type>pilgrimage</type>
+        <country>United Arab Emirates</country>
+        <number-days-nights>21</number-days-nights>
+        <transport>car</transport>
+        <hotel-characs>
+            <stars>5</stars>
+            <meal>true</meal>
+            <kind-of-meal>UAL</kind-of-meal>
+            <rooms>5</rooms>
+            <condition>true</condition>
+            <tv>true</tv>
+            <wifi>true</wifi>
+        </hotel-characs>
+        <cost>4000</cost>
+        <drugs>Supplements</drugs>
+        <procedures>massage</procedures>
+    </wellness-voucher>
+
+    <wellness-voucher id="4" name="GOA">
+        <type>tour</type>
+        <country>India</country>
+        <number-days-nights>7</number-days-nights>
+        <transport>air</transport>
+        <hotel-characs>
+            <stars>2</stars>
+            <meal>false</meal>
+            <kind-of-meal>false</kind-of-meal>
+            <rooms>1</rooms>
+            <condition>true</condition>
+            <tv>false</tv>
+            <wifi>true</wifi>
+        </hotel-characs>
+        <cost>3000</cost>
+        <drugs>pills</drugs>
+        <procedures>physiotherapy</procedures>
+    </wellness-voucher>
+
+    <wellness-voucher id="5" name="Vityaz">
+        <type>relax</type>
+        <country>Gomel</country>
+        <number-days-nights>7</number-days-nights>
+        <transport>rail</transport>
+        <hotel-characs>
+            <stars>2</stars>
+            <meal>true</meal>
+            <kind-of-meal>BB</kind-of-meal>
+            <rooms>2</rooms>
+            <condition>false</condition>
+            <tv>true</tv>
+            <wifi>false</wifi>
+        </hotel-characs>
+        <cost>500</cost>
+        <drugs>pills</drugs>
+        <procedures>physiotherapy</procedures>
+    </wellness-voucher>
+
+    <wellness-voucher id="6" name="Alenka">
+        <type>pilgrimage</type>
+        <country>RU</country>
+        <number-days-nights>11</number-days-nights>
+        <transport>car</transport>
+        <hotel-characs>
+            <stars>2</stars>
+            <meal>true</meal>
+            <kind-of-meal>FB</kind-of-meal>
+            <rooms>3</rooms>
+            <condition>true</condition>
+            <tv>true</tv>
+            <wifi>true</wifi>
+        </hotel-characs>
+        <cost>1000</cost>
+        <drugs>injections</drugs>
+        <procedures>gymnastics</procedures>
+    </wellness-voucher>
+
+    <wellness-voucher id="7" name="Bora-Bora">
+        <type>weekend</type>
+        <country>Fr</country>
+        <number-days-nights>14</number-days-nights>
+        <transport>air</transport>
+        <hotel-characs>
+            <stars>5</stars>
+            <meal>true</meal>
+            <kind-of-meal>UAL</kind-of-meal>
+            <rooms>3</rooms>
+            <condition>true</condition>
+            <tv>true</tv>
+            <wifi>true</wifi>
+        </hotel-characs>
+        <cost>3000</cost>
+        <drugs>pills</drugs>
+        <procedures>physiotherapy</procedures>
+    </wellness-voucher>
+
+    <entertaiment-voucher id="8" name="Bora-Bora">
+        <type>relax</type>
+        <country>FR</country>
+        <number-days-nights>14</number-days-nights>
+        <transport>liner</transport>
+        <hotel-characs>
+            <stars>5</stars>
+            <meal>true</meal>
+            <kind-of-meal>UAL</kind-of-meal>
+            <rooms>3</rooms>
+            <condition>true</condition>
+            <tv>true</tv>
+            <wifi>true</wifi>
+        </hotel-characs>
+        <cost>2000</cost>
+        <bar>alcohol</bar>
+    </entertaiment-voucher>
+
+    <entertaiment-voucher id="9" name="Italy for romantics">
+        <type>tour</type>
+        <country>Italy</country>
+        <number-days-nights>11</number-days-nights>
+        <transport>air</transport>
+        <hotel-characs>
+            <stars>4</stars>
+            <meal>true</meal>
+            <kind-of-meal>HB</kind-of-meal>
+            <rooms>2</rooms>
+            <condition>true</condition>
+            <tv>false</tv>
+            <wifi>true</wifi>
+        </hotel-characs>
+        <cost>2000</cost>
+        <bar>billiards</bar>
+    </entertaiment-voucher>
+
+    <entertaiment-voucher id="10">
+        <type>pilgrimage</type>
+        <country>Italy</country>
+        <number-days-nights>4</number-days-nights>
+        <transport>car</transport>
+        <hotel-characs>
+            <stars>3</stars>
+            <meal>true</meal>
+            <kind-of-meal>AL</kind-of-meal>
+            <rooms>1</rooms>
+            <condition>true</condition>
+            <tv>false</tv>
+            <wifi>true</wifi>
+        </hotel-characs>
+        <cost>2000</cost>
+        <bar>slots</bar>
+    </entertaiment-voucher>
+
+    <entertaiment-voucher id="11" name="Madagascar">
+        <type>tour</type>
+        <country>Africa</country>
+        <number-days-nights>20</number-days-nights>
+        <transport>liner</transport>
+        <hotel-characs>
+            <stars>3</stars>
+            <meal>true</meal>
+            <kind-of-meal>HB</kind-of-meal>
+            <rooms>3</rooms>
+            <condition>true</condition>
+            <tv>false</tv>
+            <wifi>false</wifi>
+        </hotel-characs>
+        <cost>3000</cost>
+        <bar>alcohol</bar>
+    </entertaiment-voucher>
+
+    <entertaiment-voucher id="12">
+        <type>tour</type>
+        <country>Germany</country>
+        <number-days-nights>11</number-days-nights>
+        <transport>air</transport>
+        <hotel-characs>
+            <stars>4</stars>
+            <meal>true</meal>
+            <kind-of-meal>HB</kind-of-meal>
+            <rooms>2</rooms>
+            <condition>true</condition>
+            <tv>false</tv>
+            <wifi>true</wifi>
+        </hotel-characs>
+        <cost>1000</cost>
+        <bar>bowling</bar>
+    </entertaiment-voucher>
+
+    <entertaiment-voucher id="13">
+        <type>tour</type>
+        <country>RU</country>
+        <number-days-nights>4</number-days-nights>
+        <transport>car</transport>
+        <hotel-characs>
+            <stars>2</stars>
+            <meal>false</meal>
+            <kind-of-meal>false</kind-of-meal>
+            <rooms>2</rooms>
+            <condition>true</condition>
+            <tv>false</tv>
+            <wifi>true</wifi>
+        </hotel-characs>
+        <cost>500</cost>
+        <bar>alcohol</bar>
+    </entertaiment-voucher>
+
+    <entertaiment-voucher id="14">
+        <type>tour</type>
+        <country>Italy</country>
+        <number-days-nights>4</number-days-nights>
+        <transport>liner</transport>
+        <hotel-characs>
+            <stars>4</stars>
+            <meal>true</meal>
+            <kind-of-meal>HB</kind-of-meal>
+            <rooms>2</rooms>
+            <condition>true</condition>
+            <tv>false</tv>
+            <wifi>true</wifi>
+        </hotel-characs>
+        <cost>2000</cost>
+        <bar>alcohol</bar>
+    </entertaiment-voucher>
+
+</tourist-vouchers>
